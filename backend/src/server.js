@@ -22,6 +22,11 @@ app.use("/api/auth",authRoutes)
 app.use("/api/users",userRoutes)
 app.use("/api/chat",chatRoutes)
 
+app.get("/",(req,res)=>{
+    res.send("Welcome to Streamify Backend");
+});
+
+
 app.listen(PORT,()=>{
     console.log(`Server is running on port http://localhost:${process.env.PORT}`);
     connectDB()

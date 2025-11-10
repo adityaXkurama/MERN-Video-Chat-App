@@ -144,7 +144,7 @@ const HomePage = () => {
                           hasRequestBeenSent? "btn-disabled":"btn-primary"
                         }`}
                         onClick={()=>sendRequestMutation(user._id)}
-                        disabled={hasRequestBeenSent || isPending}
+                        disabled={hasRequestBeenSent }
                         >
                           {hasRequestBeenSent?(
                             <>
